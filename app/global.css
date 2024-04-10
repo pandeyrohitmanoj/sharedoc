@@ -1,0 +1,58 @@
+@tailwind base;
+ @tailwind components; 
+@tailwind utilities;
+
+:root {
+  --text-color-light: hsl(0,0%, 0%);
+  --text-background-color-light: hsl(0,0%,100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: hsl(0,0%, 0%);
+  background-color: var(--text-background-color-light);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+button {
+  color: var(--text-background-color-light);
+}
+/* 
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+} */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--text-background-color-light);
+    background-color: var(--text-color-light);
+  }
+
+  textarea, select, input {
+    color: hsl(0,0%, 0%);
+  }
+  input[type='file'] {
+    color: hsl(0,0%,100%);
+  }
+  
+}
+
+ /* @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}  */
